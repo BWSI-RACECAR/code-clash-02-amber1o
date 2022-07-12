@@ -38,15 +38,9 @@ class Solution:
                counter += 1
         for number in ary:
             if number in sum_set:
-                result = "target = " + target
+                result = "target = " + str(target)
                 return result
         return False
-
-                        
-         
-                        
-                        
-                        
 def main():
     array = input().split(" ")
     for x in range (0, len(array)):
