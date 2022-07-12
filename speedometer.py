@@ -31,7 +31,7 @@ class Solution:
     for x in ary:
         other_num=target-x
         if other_num in ary:
-            return[ary.index(x), ary.index(other_num)]
+            return [ary.index(x), ary.index(other_num)]
         return False
 
 def main():
