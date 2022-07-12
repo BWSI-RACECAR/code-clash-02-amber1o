@@ -29,9 +29,9 @@ Input: ary = [3,1,7] ; target = 4 ;         Output = [0,1]
 
 class Solution:
     for x in ary:
-            other_num=target-x
-            if other_num in ary:
-                return[ary.index(x), ary.index(other_num)]
+        other_num=target-x
+        if other_num in ary:
+            return[ary.index(x), ary.index(other_num)]
         return False
 
 def main():
