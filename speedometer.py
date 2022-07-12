@@ -28,19 +28,10 @@ Input: ary = [3,1,7] ; target = 4 ;         Output = [0,1]
 """
 
 class Solution:
-    def two_numbers(self, ary, target):
-        sum_set = set()
-        for x in range (0, len(str(ary))-1):
-            if x.isdigit():
-                counter = 1 
-                while counter + x < len(ary):
-                   sum = ary[x] + ary[x+counter]
-                   sum_set.add(sum)
-                   counter += 1
-            for number in ary:
-                if number in sum_set:
-                    result = "target = " + str(target)
-                    return result
+    for x in ary:
+            other_num=target-x
+            if other_num in ary:
+                return[ary.index(x), ary.index(other_num)]
         return False
 
 def main():
