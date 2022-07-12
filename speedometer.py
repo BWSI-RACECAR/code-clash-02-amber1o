@@ -33,7 +33,7 @@ class Solution:
             other_num=target-x
             if other_num in ary:
                 return [ary.index(x), ary.index(other_num)]
-            return False
+        return False
 
 def main():
     array = input().split(" ")
