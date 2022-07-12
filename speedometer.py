@@ -30,7 +30,7 @@ Input: ary = [3,1,7] ; target = 4 ;         Output = [0,1]
 class Solution:
     def two_numbers(self, ary, target):
         sum_set = set()
-        for x in range (len(str(ary)-1):
+        for x in range (len(str(ary)-1)):
             counter = 1 
             while counter + x < len(ary):
                sum = ary[x] + ary[x+counter]
