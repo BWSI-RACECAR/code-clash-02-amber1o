@@ -31,15 +31,16 @@ class Solution:
     def two_numbers(self, ary, target):
         sum_set = set()
         for x in range (0, len(str(ary))-1):
-            counter = 1 
-            while counter + x < len(ary):
-               sum = ary[x] + ary[x+counter]
-               sum_set.add(sum)
-               counter += 1
-        for number in ary:
-            if number in sum_set:
-                result = "target = " + str(target)
-                return result
+            if x.isdigit():
+                counter = 1 
+                while counter + x < len(ary):
+                   sum = ary[x] + ary[x+counter]
+                   sum_set.add(sum)
+                   counter += 1
+            for number in ary:
+                if number in sum_set:
+                    result = "target = " + str(target)
+                    return result
         return False
 
 def main():
