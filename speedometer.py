@@ -34,8 +34,8 @@ class Solution:
             counter = 1 
             while counter + x < len(ary):
                sum = ary[x] + ary[x+counter]
-                sum_set.add(sum)
-                counter += 1
+               sum_set.add(sum)
+               counter += 1
         for number in ary:
             if number in sum_set:
                 result = "target = " + target
